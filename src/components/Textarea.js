@@ -56,11 +56,11 @@ export default function Textarea(props) {
                         <h3>{props.heading}</h3>
                         <textarea className="form-control" value={text} onChange={handleOnChange} id="txtbox" rows="8" onKeyDown={keypress}></textarea>
                     </div>
-                    <button className="btn btn-primary mx-1" onClick={handleUpClick}>Convert to Uppercase</button>
-                    <button className="btn btn-primary mx-1" onClick={handleLoClick}>Convert to Lowercase</button>
-                    <button className="btn btn-primary mx-1" onClick={handleClearClick}>Clear</button>
-                    <button className="btn btn-primary mx-1" onClick={handleCopyClick}>Copy Text</button>
-                    <button className="btn btn-primary mx-1" onClick={handleRedundancy}>Remove Unwanted Space</button>
+                    <button className="btn btn-primary mx-1 my-1" onClick={handleUpClick}>Convert to Uppercase</button>
+                    <button className="btn btn-primary mx-1 my-1" onClick={handleLoClick}>Convert to Lowercase</button>
+                    <button className="btn btn-primary mx-1 my-1" onClick={handleClearClick}>Clear</button>
+                    <button className="btn btn-primary mx-1 my-1" onClick={handleCopyClick}>Copy Text</button>
+                    <button className="btn btn-primary mx-1 my-1" onClick={handleRedundancy}>Remove Unwanted Space</button>
                 </div>
                 <div className={`container text-${props.mode === 'light' ? 'dark' : 'light'}`}>
                     <h3 className="mt-2">Text Summary</h3>
